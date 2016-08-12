@@ -1,0 +1,134 @@
+.gallery-1 {
+  position: absolute;
+  top: 550px;
+  left: 220px;
+  margin: 1px auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.gallery-2 {
+  position: absolute;
+  top: 550px;
+  left: 480px;
+  margin: 1px auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.gallery-3 {
+  position: absolute;
+  top: 550px;
+  left: 780px;
+  margin: 1px auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.gallery-item-wrapper {
+  margin-top: 30px;
+  margin: 1px auto;
+  display: float;
+  height: 196px; 
+  width: 295px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-image {
+  height: 196px; 
+  width: 295px;
+  
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+  
+  position: absolute; 
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.gallery-image:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: pink;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+ 
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .5s ease;
+}
+
+.gallery-image:hover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .7;
+}
+
+
+.gallery-image:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  
+}
+
+.play {
+  position: relative;
+  top: -180px;
+  color: #fff;
+  font-size: 75px;
+  height: 166px;
+  width: 295px;
+  display: block;
+  opacity: 0;
+  z-index: 100;
+  
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.play:hover {
+  opacity: 1;
+  top: -145px;
+  
+  -moz-transform: scale(.8);
+  -webkit-transform: scale(.8);
+  -o-transform: scale(.8);
+  -ms-transform: scale(.8);
+  transform: scale(.8);
+}
